@@ -1,40 +1,36 @@
 # concept-comic-skill
 
-`concept-comic-skill` is an npm-distributed skill asset package for turning a word, phrase, term, or concept into a four-panel comic creation package.
+Turn a word, phrase, term, or concept into a **four-panel comic creation package**.
 
-The skill is optimized for:
+`concept-comic-skill` is a skill asset package for general skill runtimes. It is designed for people who want to turn AI terms, office language, product jargon, or short meme premises into clean, deadpan, social-media-friendly comics.
+
+It is optimized for:
 
 - Chinese `Idea Breakdown` and `Storyboard`
 - English image prompts
 - literal / satire / reflective mode control
-- deadpan webcomic-style joke development
-- AI terms, office concepts, product language, and workflow jargon
+- deadpan webcomic-style humor
+- AI, workplace, product, and workflow concepts
 
-## Install
+## Quick Start
+
+Install:
 
 ```bash
 npm install concept-comic-skill
 ```
 
-## What This Package Contains
+Load the skill from your runtime, then invoke it by name or by matching intent:
 
-- `SKILL.md`
-- `agents/openai.yaml`
-- `references/schema.md`
-- `references/workflow.md`
-- `references/prompt-templates.md`
-- `references/guardrails.md`
-- `references/examples.md`
+```text
+Use $concept-comic-skill to turn "guardrails" into a four-panel comic.
+```
 
-This package does not auto-install the skill into a host runtime. It is intended for hosts that load skill assets from installed npm packages or from explicit package paths.
+```text
+用 $concept-comic-skill 把 “Human in the Loop” 做成四格小漫画。
+```
 
-## Triggering Intents
-
-Hosts can use the skill name directly:
-
-- `$concept-comic-skill`
-
-Hosts that support keyword-based routing should consider these trigger phrases:
+If your runtime supports keyword-based routing, `concept-comic-skill` is intended to match requests such as:
 
 - four-panel comic
 - 四格漫画
@@ -50,23 +46,96 @@ Hosts that support keyword-based routing should consider these trigger phrases:
 - 把这个术语变成四格
 - 把这个概念做成小漫画
 
-## Example Usage
+## What You Get
 
-```text
-Use $concept-comic-skill to turn "guardrails" into a four-panel comic.
+Given a raw idea such as a term, phrase, or short premise, the skill returns a structured package with:
+
+- mode decision
+- 3 angle candidates
+- idea breakdown
+- 4-panel Chinese storyboard
+- English image prompt
+- anti-drift guardrail prompt
+- recovery prompt for rerolling bad generations
+- optional social copy
+
+The output is designed to be useful both for human ideation and for passing into downstream image-generation workflows.
+
+## Example Inputs
+
+These are the kinds of inputs the skill is built for:
+
+```yaml
+rawIdea: guardrails
+mode: auto
+domain: ai
+tone: deadpan
+platformTarget: comic_only
 ```
 
-```text
-Use $concept-comic-skill to turn "Chain of Thought" into a deadpan webcomic.
+```yaml
+rawIdea: Chain of Thought
+mode: auto
+domain: ai
+tone: deadpan
+platformTarget: comic_only
 ```
 
-```text
-用 $concept-comic-skill 把 “Human in the Loop” 做成四格小漫画。
+```yaml
+rawIdea: Open Office
+mode: satire
+domain: office
+tone: deadpan
+platformTarget: comic_only
 ```
 
-## Asset Paths
+## How It Thinks
 
-If a host wants to load files directly from the package, these paths are exported:
+The skill follows a fixed pipeline instead of dumping one loose answer:
+
+1. classify the idea and pick the best mode
+2. generate 3 candidate angles in that mode
+3. lock the strongest comic premise
+4. turn it into a 4-panel storyboard
+5. generate an English image prompt
+6. add guardrails and recovery prompts
+
+It is especially strict about two things:
+
+- not letting literal ideas drift into abstract reflection
+- making sure Panel 4 is stronger than Panel 3
+
+## Package Contents
+
+This package includes:
+
+- `SKILL.md`
+- `agents/openai.yaml`
+- `references/schema.md`
+- `references/workflow.md`
+- `references/prompt-templates.md`
+- `references/guardrails.md`
+- `references/examples.md`
+
+The references include built-in cases such as:
+
+- `Highest Priority`
+- `Open Office`
+- `Human in the Loop`
+- `Model Distillation`
+- `guardrails`
+
+## Runtime Notes
+
+This is an **asset package**, not a CLI.
+
+It does **not** auto-install itself into a host runtime. It is intended for runtimes that:
+
+- load skill assets from installed npm packages
+- load skills from explicit package paths
+- support skill discovery by metadata and keyword matching
+
+Exported asset paths:
 
 - `concept-comic-skill/SKILL.md`
 - `concept-comic-skill/agents/openai.yaml`
@@ -75,10 +144,6 @@ If a host wants to load files directly from the package, these paths are exporte
 - `concept-comic-skill/references/prompt-templates.md`
 - `concept-comic-skill/references/guardrails.md`
 - `concept-comic-skill/references/examples.md`
-
-## Package Purpose
-
-This is an asset package, not a CLI. It ships the skill definition and supporting prompt assets so another runtime can discover, load, and invoke the skill.
 
 ## License
 
