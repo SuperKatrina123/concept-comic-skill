@@ -29,7 +29,7 @@ It is optimized for:
 Install:
 
 ```bash
-npm install concept-comic-skill
+npx skills add SuperKatrina123/concept-comic-skill
 ```
 
 Load the skill from your runtime, then invoke it by name or by matching intent:
