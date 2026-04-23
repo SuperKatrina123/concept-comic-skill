@@ -121,6 +121,7 @@ Always preserve:
 
 - horizontal 4:3 canvas by default unless the user asks otherwise
 - clean 2x2 panel grid by default unless the user asks otherwise
+- large readable title above the grid by default unless the user asks otherwise
 - visible panel borders or gutters so each panel reads separately
 - simple webcomic style
 - clear composition
@@ -135,6 +136,7 @@ Output rules:
 - `fullPrompt` must use the fixed production template.
 - Do not replace the fixed headings with paraphrases.
 - Use the chosen `title`, `coreJoke`, and storyboard panel fields directly.
+- Keep the title visually prominent, centered or clearly anchored above the comic, and easy to read at a glance.
 
 ### Stage 6: Guardrails / Recovery / Social Copy
 

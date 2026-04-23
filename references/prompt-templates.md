@@ -17,6 +17,7 @@ Default style:
 - short dialogue
 - default canvas is horizontal 4:3 unless the user specifies another ratio
 - default panel layout is a clean 2x2 grid with visible spacing between panels
+- default title treatment is a large readable title above the comic
 
 Process rules:
 - First choose the right mode: literal, satire, or reflective.
@@ -173,6 +174,7 @@ Dialogue: {{panel4.dialogue}}
 Style requirements:
 - horizontal 4:3 canvas
 - clean 2x2 four-panel grid
+- large readable title above the grid
 - visible panel borders or gutters
 - simple flat comic style
 - clean black outlines
@@ -182,6 +184,7 @@ Style requirements:
 - deadpan humor
 - clean and readable 4-panel layout
 - consistent character design across all panels
+- keep the title short, bold, and easy to read
 
 Important:
 - keep the joke visually clear
