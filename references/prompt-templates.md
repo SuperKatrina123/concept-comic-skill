@@ -15,6 +15,7 @@ Default style:
 - minimal visual clutter
 - deadpan tone
 - short dialogue
+- default canvas is horizontal 4:3 unless the user specifies another ratio
 
 Process rules:
 - First choose the right mode: literal, satire, or reflective.
@@ -124,6 +125,7 @@ Return:
 - fullPrompt
 
 Style requirements:
+- horizontal 4:3 composition by default unless the user asks otherwise
 - simple webcomic
 - clear character acting
 - minimal background clutter

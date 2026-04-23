@@ -119,6 +119,7 @@ Write English prompt text suitable for image models.
 
 Always preserve:
 
+- horizontal 4:3 canvas by default unless the user asks otherwise
 - simple webcomic style
 - clear composition
 - readable acting

@@ -17,6 +17,7 @@ mode: auto
 domain: ai
 tone: deadpan
 platformTarget: comic_only
+imageAspectRatio: landscape_4_3
 ```
 
 ## Output
@@ -89,3 +90,4 @@ socialCopy:
 - Omit `socialCopy` when `platformTarget` is `comic_only`.
 - If the user explicitly specifies a mode, do not override it.
 - If `mode` is `auto`, output `modeDecision.reason` before expanding the comic.
+- Unless the user explicitly requests another format, image prompts should assume a horizontal `4:3` canvas.

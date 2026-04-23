@@ -30,6 +30,7 @@ Do not use this skill for:
 - Keep `Idea Breakdown`, `Storyboard`, and social copy in Chinese.
 - Keep `Image Prompt`, `Guardrail Prompt`, and `Recovery Prompt` in English.
 - Default tone is `deadpan`.
+- Default image size is `landscape 4:3` unless the user explicitly asks for another ratio.
 - Default output path is: 3 angle candidates in one mode, then 1 full comic package.
 
 ## Workflow
