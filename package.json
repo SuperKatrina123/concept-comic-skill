@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Keyword-triggerable skill asset package for turning words and concepts into four-panel comic storyboards and image prompts.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperKatrina123/concept-comic-skill.git"
+  },
+  "homepage": "https://github.com/SuperKatrina123/concept-comic-skill",
+  "bugs": {
+    "url": "https://github.com/SuperKatrina123/concept-comic-skill/issues"
+  },
   "keywords": [
     "skill",
     "comic",
@@ -16,11 +24,13 @@
     "prompt-assets"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "SKILL.md",
     "agents",
+    "assets",
     "references",
     "README.md",
     "LICENSE"
