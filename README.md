@@ -102,6 +102,20 @@ tone: deadpan
 platformTarget: comic_only
 ```
 
+## Preview
+
+### Model Distillation
+
+![Model Distillation Preview](./assets/model-distillation.png)
+
+### Highest Priority
+
+![Highest Priority Preview](./assets/highest-priority.png)
+
+### Human in the Loop
+
+![Human in the Loop Preview](./assets/human-in-the-loop.png)
+
 ## How It Thinks
 
 The skill follows a fixed pipeline instead of dumping one loose answer:
