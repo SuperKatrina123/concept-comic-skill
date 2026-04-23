@@ -1,6 +1,15 @@
 # concept-comic-skill
 
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![Package Type](https://img.shields.io/badge/package-skill_asset-blue)
+![Runtime](https://img.shields.io/badge/runtime-general_skill_runtime-black)
+![Layout](https://img.shields.io/badge/layout-2x2_grid-orange)
+![Canvas](https://img.shields.io/badge/canvas-4%3A3_horizontal-purple)
+![Prompt](https://img.shields.io/badge/prompt-fixed_template-teal)
+
 Turn a word, phrase, term, or concept into a **four-panel comic creation package**.
+
+Chinese storyboard. English image prompt. Deadpan webcomic logic.
 
 `concept-comic-skill` is a skill asset package for general skill runtimes. It is designed for people who want to turn AI terms, office language, product jargon, or short meme premises into clean, deadpan, social-media-friendly comics.
 
