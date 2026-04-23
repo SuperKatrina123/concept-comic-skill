@@ -92,14 +92,12 @@ This makes the output useful both for **human ideation** and for **downstream im
 
 ## Quick example
 
-**Input**
+```text
+Use $concept-comic-skill to turn "Human in the Loop" into a deadpan four-panel comic.
+```
 
-```yaml
-rawIdea: Human in the Loop
-mode: auto
-domain: ai
-tone: deadpan
-platformTarget: comic_only
+```text
+用 $concept-comic-skill 把 “Human in the Loop” 做成四格小漫画。
 ```
 
 ## How It Thinks
