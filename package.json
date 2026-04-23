@@ -1,0 +1,38 @@
+{
+  "name": "concept-comic-skill",
+  "version": "0.1.0",
+  "description": "Keyword-triggerable skill asset package for turning words and concepts into four-panel comic storyboards and image prompts.",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "comic",
+    "webcomic",
+    "four-panel",
+    "literal-comic",
+    "satire-comic",
+    "deadpan",
+    "ai-terms",
+    "office-humor",
+    "prompt-assets"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "SKILL.md",
+    "agents",
+    "references",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./SKILL.md": "./SKILL.md",
+    "./agents/openai.yaml": "./agents/openai.yaml",
+    "./references/schema.md": "./references/schema.md",
+    "./references/workflow.md": "./references/workflow.md",
+    "./references/prompt-templates.md": "./references/prompt-templates.md",
+    "./references/guardrails.md": "./references/guardrails.md",
+    "./references/examples.md": "./references/examples.md",
+    "./package.json": "./package.json"
+  }
+}

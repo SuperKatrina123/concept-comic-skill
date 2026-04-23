@@ -1,0 +1,6 @@
+interface:
+  display_name: "Concept Comic Skill"
+  short_description: "Turn terms into deadpan four-panel comic packages"
+  default_prompt: "Use $concept-comic-skill to turn a term, phrase, or concept into a four-panel comic package with a Chinese storyboard and English image prompts."
+policy:
+  allow_implicit_invocation: true
