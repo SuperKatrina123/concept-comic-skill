@@ -1,66 +1,68 @@
-# concept-comic-skill
+<div align="center">
 
-![License: MIT](https://img.shields.io/badge/license-MIT-green)
-![Package Type](https://img.shields.io/badge/package-skill_asset-blue)
-![Runtime](https://img.shields.io/badge/runtime-general_skill_runtime-black)
-![Layout](https://img.shields.io/badge/layout-2x2_grid-orange)
-![Canvas](https://img.shields.io/badge/canvas-4%3A3_horizontal-purple)
-![Prompt](https://img.shields.io/badge/prompt-fixed_template-teal)
+# Concept Comic Skill
 
-Turn a word, phrase, term, or concept into a **four-panel comic creation package**.
+### 把黑话，画成笑话  
+### Turn jargon into deadpan four-panel comics.
 
-Chinese storyboard. English image prompt. Deadpan webcomic logic.
+Transform AI terms, office jargon, and product concepts into a complete **four-panel comic package** — including **angle options**, **Chinese storyboard**, and **English image prompt**.
 
-`concept-comic-skill` is a skill asset package for general skill runtimes. It is designed for people who want to turn AI terms, office language, product jargon, or short meme premises into clean, deadpan, social-media-friendly comics.
+![License: MIT](https://img.shields.io/badge/license-MIT-black)
+![Format: 4 panel comic](https://img.shields.io/badge/format-4_panel_comic-black)
+![Tone: deadpan](https://img.shields.io/badge/tone-deadpan-lightgrey)
+![Output: storyboard + prompt](https://img.shields.io/badge/output-storyboard_%2B_prompt-6ee7b7)
 
-It is optimized for:
+**concept → angle → storyboard → prompt**
 
-- Chinese `Idea Breakdown` and `Storyboard`
-- English image prompts
-- default horizontal `4:3` image framing
-- default clean `2x2` four-panel layout
-- default large title above the comic
-- literal / satire / reflective mode control
-- deadpan webcomic-style humor
-- AI, workplace, product, and workflow concepts
+</div>
 
-## Quick Start
+<p align="center">
+  <img src="./assets/human-in-the-loop.png" alt="Concept Comic Skill preview" width="900" />
+</p>
 
-Install:
+<p align="center">
+  Input one concept → get a structured comic package.
+</p>
+
+---
+
+## Install
 
 ```bash
 npx skills add SuperKatrina123/concept-comic-skill
 ```
 
-Load the skill from your runtime, then invoke it by name or by matching intent:
+---
 
-```text
-Use $concept-comic-skill to turn "guardrails" into a four-panel comic.
-```
+## What it does
 
-```text
-用 $concept-comic-skill 把 “Human in the Loop” 做成四格小漫画。
-```
+`concept-comic-skill` turns a **word, phrase, term, or abstract concept** into a comic-ready output package.
 
-If your runtime supports keyword-based routing, `concept-comic-skill` is intended to match requests such as:
+It is designed for people who want to turn things like:
 
-- four-panel comic
-- 四格漫画
-- 四格小漫画
-- webcomic
-- literal comic
-- satire comic
-- reflective comic
-- deadpan comic
-- AI term comic
-- 职场梗漫画
-- 把这个词画成漫画
-- 把这个术语变成四格
-- 把这个概念做成小漫画
+- AI terms
+- office jargon
+- product language
+- workflow concepts
+- short meme premises
 
-## What You Get
+into clean, deadpan, social-media-friendly four-panel comics.
 
-Given a raw idea such as a term, phrase, or short premise, the skill returns a structured package with:
+By default, the output is optimized for:
+
+- Chinese `Idea Breakdown` and `Storyboard`
+- English image prompts
+- horizontal `4:3` framing
+- clean `2x2` four-panel layout
+- large readable title above the comic
+- literal / satire / reflective mode control
+- deadpan webcomic-style humor
+
+---
+
+## What you get
+
+Given one raw idea, the skill returns a structured package with:
 
 - mode decision
 - 3 angle candidates
@@ -71,59 +73,34 @@ Given a raw idea such as a term, phrase, or short premise, the skill returns a s
 - recovery prompt for rerolling bad generations
 - optional social copy
 
-The output is designed to be useful both for human ideation and for passing into downstream image-generation workflows.
+This makes the output useful both for **human ideation** and for **downstream image-generation workflows**.
 
-By default, image prompts assume a **horizontal 4:3 canvas**, a **clean 2x2 four-panel grid**, and a **large readable title above the comic** unless your runtime or prompt overrides them.
+---
 
-The final image prompt is not a loose paragraph. It is formatted as a stable production template with:
+## Good for concepts like
 
-- `Title`
-- `Core joke`
-- `4-panel structure`
-- `Style requirements`
-- `Important`
+- Human in the Loop
+- Guardrails
+- Context Window
+- Tool Calling
+- Chain of Thought
+- Open Office
+- Highest Priority
+- Model Distillation
 
-## Example Inputs
+---
 
-These are the kinds of inputs the skill is built for:
+## Quick example
+
+**Input**
 
 ```yaml
-rawIdea: guardrails
+rawIdea: Human in the Loop
 mode: auto
 domain: ai
 tone: deadpan
 platformTarget: comic_only
 ```
-
-```yaml
-rawIdea: Chain of Thought
-mode: auto
-domain: ai
-tone: deadpan
-platformTarget: comic_only
-```
-
-```yaml
-rawIdea: Open Office
-mode: satire
-domain: office
-tone: deadpan
-platformTarget: comic_only
-```
-
-## Preview
-
-### Model Distillation
-
-![Model Distillation Preview](./assets/model-distillation.png)
-
-### Highest Priority
-
-![Highest Priority Preview](./assets/highest-priority.png)
-
-### Human in the Loop
-
-![Human in the Loop Preview](./assets/human-in-the-loop.png)
 
 ## How It Thinks
 
