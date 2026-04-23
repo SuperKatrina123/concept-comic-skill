@@ -86,6 +86,18 @@ socialCopy:
 - `modeDecision`, `angleCandidates`, `ideaBreakdown`, `storyboard`, and social copy are in Chinese.
 - `imagePrompt`, `guardrailPrompt`, and `recoveryPrompt` are in English.
 
+## Image Prompt Format
+
+- `stylePrompt` is a short English style summary.
+- `fullPrompt` is the production prompt and should use a fixed template rather than a free-form paragraph.
+- `fullPrompt` should contain these sections in order:
+  - `Title: {{title}}`
+  - `Please create a 4-panel humorous comic in a simple indie webcomic style.`
+  - `Core joke:`
+  - `4-panel structure:`
+  - `Style requirements:`
+  - `Important:`
+
 ## Conditional Output
 
 - Omit `socialCopy` when `platformTarget` is `comic_only`.

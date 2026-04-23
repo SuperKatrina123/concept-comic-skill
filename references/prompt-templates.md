@@ -136,6 +136,62 @@ Style requirements:
 - indie comic / deadpan office comic feel
 - no glossy cinematic rendering
 - no vertical scroll-comic strip and no collage-like panel arrangement
+
+`stylePrompt` should be short.
+
+`fullPrompt` must use this exact structure:
+
+Title: {{title}}
+
+Please create a 4-panel humorous comic in a simple indie webcomic style.
+
+Core joke:
+{{coreJoke}}
+
+4-panel structure:
+
+Panel 1:
+{{panel1.scene}}
+{{panel1.action}}
+Dialogue: {{panel1.dialogue}}
+
+Panel 2:
+{{panel2.scene}}
+{{panel2.action}}
+Dialogue: {{panel2.dialogue}}
+
+Panel 3:
+{{panel3.scene}}
+{{panel3.action}}
+Dialogue: {{panel3.dialogue}}
+
+Panel 4:
+{{panel4.scene}}
+{{panel4.action}}
+Dialogue: {{panel4.dialogue}}
+
+Style requirements:
+- horizontal 4:3 canvas
+- clean 2x2 four-panel grid
+- visible panel borders or gutters
+- simple flat comic style
+- clean black outlines
+- minimal facial features
+- slightly awkward but charming proportions
+- soft pastel color palette
+- deadpan humor
+- clean and readable 4-panel layout
+- consistent character design across all panels
+
+Important:
+- keep the joke visually clear
+- do not make it too realistic
+- make the final panel the strongest payoff
+
+Rules:
+- Preserve the headings exactly as written above.
+- Fill in each panel from the locked storyboard, not from a rewritten version.
+- Keep the prompt concise and production-ready.
 ```
 
 ## Stage 6 Prompt

@@ -29,6 +29,7 @@ Do not use this skill for:
 - If `mode` is unspecified, infer the best mode first.
 - Keep `Idea Breakdown`, `Storyboard`, and social copy in Chinese.
 - Keep `Image Prompt`, `Guardrail Prompt`, and `Recovery Prompt` in English.
+- `imagePrompt.fullPrompt` should use the fixed production template, not a free-form paragraph.
 - Default tone is `deadpan`.
 - Default image size is `landscape 4:3` unless the user explicitly asks for another ratio.
 - Default panel layout is a `2x2` grid with clear borders and whitespace between panels.

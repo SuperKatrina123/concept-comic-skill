@@ -56,7 +56,7 @@ Given a raw idea such as a term, phrase, or short premise, the skill returns a s
 - 3 angle candidates
 - idea breakdown
 - 4-panel Chinese storyboard
-- English image prompt
+- English image prompt in a fixed production template
 - anti-drift guardrail prompt
 - recovery prompt for rerolling bad generations
 - optional social copy
@@ -64,6 +64,14 @@ Given a raw idea such as a term, phrase, or short premise, the skill returns a s
 The output is designed to be useful both for human ideation and for passing into downstream image-generation workflows.
 
 By default, image prompts assume a **horizontal 4:3 canvas** and a **clean 2x2 four-panel grid** unless your runtime or prompt overrides them.
+
+The final image prompt is not a loose paragraph. It is formatted as a stable production template with:
+
+- `Title`
+- `Core joke`
+- `4-panel structure`
+- `Style requirements`
+- `Important`
 
 ## Example Inputs
 

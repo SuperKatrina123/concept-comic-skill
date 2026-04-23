@@ -129,6 +129,13 @@ Always preserve:
 - non-cinematic finish
 - avoid long vertical strips, irregular collage layouts, or overlapping panels by default
 
+Output rules:
+
+- `stylePrompt` stays short.
+- `fullPrompt` must use the fixed production template.
+- Do not replace the fixed headings with paraphrases.
+- Use the chosen `title`, `coreJoke`, and storyboard panel fields directly.
+
 ### Stage 6: Guardrails / Recovery / Social Copy
 
 Add:
