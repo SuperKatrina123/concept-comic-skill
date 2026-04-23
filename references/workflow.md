@@ -49,6 +49,7 @@ Hard constraints:
 - Panel 4 must be stronger than Panel 3.
 - Panel 4 must introduce either escalation, reversal, or a deadpan conclusion that adds new information.
 - Dialogue stays short.
+- Dialogue should not use speaker-name prefixes unless explicitly requested.
 - The image should do more work than the text.
 - Keep the mood deadpan unless the user asks otherwise.
 - Prefer minimal office, product, or everyday staging over complex sci-fi scenes.
@@ -113,6 +114,13 @@ Write 4 panels in Chinese with:
 
 Keep scenes visually clear and not overly crowded.
 
+Extra dialogue rules:
+
+- Panel 2 must show real narrative progression, not just a neutral reaction shot.
+- Prefer plain spoken dialogue over labeled script dialogue.
+- In Panel 4, prefer one decisive payoff line if possible.
+- Avoid turning Panel 4 into two balloons that explain the joke twice.
+
 ### Stage 5: Image Prompt
 
 Write English prompt text suitable for image models.
@@ -137,6 +145,8 @@ Output rules:
 - Do not replace the fixed headings with paraphrases.
 - Use the chosen `title`, `coreJoke`, and storyboard panel fields directly.
 - Keep the title visually prominent, centered or clearly anchored above the comic, and easy to read at a glance.
+- Do not add speaker-name prefixes to dialogue unless explicitly requested.
+- Preserve concise final-panel dialogue and avoid over-explaining the joke.
 
 ### Stage 6: Guardrails / Recovery / Social Copy
 

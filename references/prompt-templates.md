@@ -41,6 +41,7 @@ Four-panel rules:
 Payoff test:
 - Panel 4 must add escalation, reversal, or the definitive deadpan conclusion.
 - If Panel 4 only restates what Panel 3 already showed, rewrite it.
+- Prefer a single strong final line over multiple explanatory speech bubbles.
 
 Do not sacrifice joke clarity for philosophical depth.
 Do not turn a strict literal joke into a metaphor, life lesson, or emotional reflection.
@@ -113,6 +114,9 @@ Rules:
 - one narrative function per panel
 - Panel 4 must land harder than Panel 3
 - Panel 4 must add a new hit, not just a label
+- Panel 2 must advance the joke, not just stall between setup and twist
+- do not use speaker-name prefixes in dialogue unless explicitly requested
+- prefer one strong payoff line in Panel 4 if the joke still works
 - keep dialogue short
 - show the joke visually
 ```
@@ -195,6 +199,8 @@ Rules:
 - Preserve the headings exactly as written above.
 - Fill in each panel from the locked storyboard, not from a rewritten version.
 - Keep the prompt concise and production-ready.
+- Keep dialogue as plain speech, not script labels like "Presenter:" or "Engineer:", unless explicitly requested.
+- Prefer a single decisive final-panel line over multiple payoff balloons when possible.
 ```
 
 ## Stage 6 Prompt

@@ -118,6 +118,12 @@ It is especially strict about two things:
 - not letting literal ideas drift into abstract reflection
 - making sure Panel 4 is stronger than Panel 3
 
+It also defaults to:
+
+- no speaker-name prefixes in dialogue
+- a meaningful Panel 2 that actually advances the joke
+- a cleaner one-line payoff in Panel 4 when possible
+
 ## Package Contents
 
 This package includes:

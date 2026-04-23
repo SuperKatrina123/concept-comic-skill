@@ -56,10 +56,13 @@ Preserve the chosen premise across all later stages. Do not silently switch mode
 - Panel 4 must hit harder than Panel 3.
 - Panel 4 must add a new hit, escalation, or deadpan conclusion instead of merely restating Panel 3.
 - Keep dialogue short.
+- Do not use speaker-name prefixes in dialogue unless the user explicitly asks for them.
 - Prefer visual clarity over explanation.
 - Favor simple webcomic staging over cinematic spectacle.
 - Default layout should read as a clean 2x2 grid, not a vertical strip or collage.
 - Keep the title large, simple, and readable above the grid.
+- Panel 2 must meaningfully advance the joke, not act as filler.
+- Panel 4 should preferably land with a single decisive line rather than two explanatory bubbles.
 - In `literal` mode, do not turn the joke into a lesson, metaphor, or reflective caption.
 
 ## References
