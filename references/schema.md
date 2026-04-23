@@ -18,6 +18,7 @@ domain: ai
 tone: deadpan
 platformTarget: comic_only
 imageAspectRatio: landscape_4_3
+panelLayout: grid_2x2
 ```
 
 ## Output
@@ -91,3 +92,4 @@ socialCopy:
 - If the user explicitly specifies a mode, do not override it.
 - If `mode` is `auto`, output `modeDecision.reason` before expanding the comic.
 - Unless the user explicitly requests another format, image prompts should assume a horizontal `4:3` canvas.
+- Unless the user explicitly requests another layout, image prompts should assume a clean `2x2` four-panel grid with visible gutters and borders.

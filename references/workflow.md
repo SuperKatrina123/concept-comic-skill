@@ -120,11 +120,14 @@ Write English prompt text suitable for image models.
 Always preserve:
 
 - horizontal 4:3 canvas by default unless the user asks otherwise
+- clean 2x2 panel grid by default unless the user asks otherwise
+- visible panel borders or gutters so each panel reads separately
 - simple webcomic style
 - clear composition
 - readable acting
 - minimal background clutter
 - non-cinematic finish
+- avoid long vertical strips, irregular collage layouts, or overlapping panels by default
 
 ### Stage 6: Guardrails / Recovery / Social Copy
 

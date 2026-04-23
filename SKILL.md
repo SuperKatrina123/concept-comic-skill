@@ -31,6 +31,7 @@ Do not use this skill for:
 - Keep `Image Prompt`, `Guardrail Prompt`, and `Recovery Prompt` in English.
 - Default tone is `deadpan`.
 - Default image size is `landscape 4:3` unless the user explicitly asks for another ratio.
+- Default panel layout is a `2x2` grid with clear borders and whitespace between panels.
 - Default output path is: 3 angle candidates in one mode, then 1 full comic package.
 
 ## Workflow
@@ -55,6 +56,7 @@ Preserve the chosen premise across all later stages. Do not silently switch mode
 - Keep dialogue short.
 - Prefer visual clarity over explanation.
 - Favor simple webcomic staging over cinematic spectacle.
+- Default layout should read as a clean 2x2 grid, not a vertical strip or collage.
 - In `literal` mode, do not turn the joke into a lesson, metaphor, or reflective caption.
 
 ## References

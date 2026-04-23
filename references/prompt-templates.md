@@ -16,6 +16,7 @@ Default style:
 - deadpan tone
 - short dialogue
 - default canvas is horizontal 4:3 unless the user specifies another ratio
+- default panel layout is a clean 2x2 grid with visible spacing between panels
 
 Process rules:
 - First choose the right mode: literal, satire, or reflective.
@@ -126,12 +127,15 @@ Return:
 
 Style requirements:
 - horizontal 4:3 composition by default unless the user asks otherwise
+- clean 2x2 four-panel grid by default unless the user asks otherwise
+- visible panel borders or gutters
 - simple webcomic
 - clear character acting
 - minimal background clutter
 - readable four-panel composition
 - indie comic / deadpan office comic feel
 - no glossy cinematic rendering
+- no vertical scroll-comic strip and no collage-like panel arrangement
 ```
 
 ## Stage 6 Prompt

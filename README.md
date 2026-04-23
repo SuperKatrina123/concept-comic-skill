@@ -9,6 +9,7 @@ It is optimized for:
 - Chinese `Idea Breakdown` and `Storyboard`
 - English image prompts
 - default horizontal `4:3` image framing
+- default clean `2x2` four-panel layout
 - literal / satire / reflective mode control
 - deadpan webcomic-style humor
 - AI, workplace, product, and workflow concepts
@@ -62,7 +63,7 @@ Given a raw idea such as a term, phrase, or short premise, the skill returns a s
 
 The output is designed to be useful both for human ideation and for passing into downstream image-generation workflows.
 
-By default, image prompts assume a **horizontal 4:3 canvas** unless your runtime or prompt overrides it.
+By default, image prompts assume a **horizontal 4:3 canvas** and a **clean 2x2 four-panel grid** unless your runtime or prompt overrides them.
 
 ## Example Inputs
 
